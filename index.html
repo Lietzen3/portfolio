@@ -1,0 +1,137 @@
+<!doctype html>
+<html>
+		<head>
+		<meta charset="UTF-8">
+		<title>Portfolio Katrine Lietzen</title>
+		<link rel="stylesheet" href="styles/stylesheet-portfolio.css">
+		<script type="text/javascript" src="scripts/jquery.scrollTo.min.js"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" src="jquery.scrollTo.min.js"></script>
+
+		<!-- start på scroll -->
+
+		<script type="text/javascript">
+
+	
+$(document).ready(function () {
+
+var elem   = $('#logo');  
+    
+var bottom = $(elem).position().top+$(elem).outerHeight(true)
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > bottom) {
+            $('#scrollup').fadeIn();
+        } else {
+            $('#scrollup').fadeOut();
+        }
+    });
+
+    $('#scrollup').click(function () {
+        $("html, body").animate({ scrollTop: 0 }, 500);
+        return false;
+    });
+	
+	
+$("#upper-nav a").click(function(e){
+			e.preventDefault();
+			$(window).scrollTo(this.hash,1000);
+			
+		});
+	
+		</script>
+
+		<!-- slut på scroll -->
+		</head>
+		<!-- start forside -->
+		<header>
+  <div id="upper">
+            <div id="logo"><img src="billeder/k.logo.png" alt="logo"></div>
+            <nav id="navi">
+      <ul id="navigation">
+                
+        <li><a href="#omkringmig">Omkring mig</a></li>
+        <li><a href="#tidslinje">Tidslinje</a></li>
+        <li><a href="#projekter">Projekter</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+        
+              </ul>
+    </nav>
+          </div>
+</header>
+		<!-- slut på forside -->
+		<body>
+<img src="billeder/k.logo.png" width="954" height="804" alt=""/><img src="billeder/k.logo.png" width="954" height="804" alt=""/><!-- start på omkring mig -->
+<section id="omkringmig"> <img id="marmor" src="billeder/omkringmig.png" width="-300%" alt="marmor"> </section>
+<!-- slut omkring mig  --> 
+
+<!-- start på tidslinje -->
+<section id="tidslinje">
+          <h1> — TIDSLINJE —</h1>
+          <br>
+          <img id="tidslinjebillede" src="billeder/tidslinje.jpg" width="-300%" alt="tidslinje"> </section>
+<!-- slut på tidslinje --> 
+
+<!-- start på projekter -->
+<section id="projekter"> <br>
+          <h1> — PROJEKTER — </h1>
+          <br>
+          <div>
+    <ul id="projektlinks">
+              <li> <a href="#">Drømme Portfolio</a></li>
+            </ul>
+  </div>
+          <br>
+           </section>
+<!-- slut på projekter --> 
+
+<!-- start på kontakt -->
+<section id="kontakt">
+          <h1> — KONTAKT — </h1>
+          
+          <!-- kontakt start (kodning fra w3schools.com) send knappen virker ikke -->
+          <div class="container">
+    <form action="/action_page.php">
+              <label for="email">Navn</label>
+      <br>
+              <input type="text" id="fname" name="firstname" placeholder="skriv her..">
+              <br>
+              <label for="email">Email</label>
+              <br>
+              <input type="text" id="lname" name="lastname" placeholder="skriv her..">
+              <br>
+              <label for="besked">Besked</label>
+      <br>
+              <textarea id="emne" name="Emne" placeholder="skriv her.." style="height:200px"></textarea>
+              <br>
+              <input type="submit" value="Send">
+      <br>
+            </form>
+  </div>
+        </section>
+<!-- kontakt slut (kodning fra w3schools.com) send knappen virker ikke --> 
+
+<!-- start på følg mit liv i billeder -->
+<section id="folgmitliv">
+          <h1> — FØLG MIT LIV I BILLEDER —</h1>
+          <tr>
+    <td><img src="billeder/mig.jpg"></td>
+    <td><img src="billeder/negle.jpg"></td>
+    <td><img src="billeder/blomst.jpg"></td>
+    <td><img src="billeder/ur.jpg"></td>
+  </tr>
+        </section>
+<section id="ikon"> <a href="https://www.instagram.com/katrine_lietzen/"><img id="ikon" src="billeder/ikon.png" width="-300%" alt="ikon"></a> </section>
+<!-- slut på følg mit liv i billeder --> 
+
+<!-- start på footer  -->
+<section id="footer">
+          <footer>
+    <h2>Copyright © 2017 | Website by Katrine Lietzen | 
+              CPH Business student</h2>
+  </footer>
+        </section>
+<!-- slut på footer -->
+border-radius: 25px;
+</body>
+</html>
